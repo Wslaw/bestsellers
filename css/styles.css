@@ -218,7 +218,7 @@ img {
 /*              Components styles          */
 /* --------------------------------------- */
 .container {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding:0 16px;
 }
@@ -303,7 +303,7 @@ img {
 }
 }
 
-
+/* -------------------------------------------- */
 
 .section {
 }
@@ -317,6 +317,7 @@ img {
   margin-bottom: 30px;
 }
 .best{
+   width: 100%;
      display: flex;
     flex-direction: column;
     justify-content: center;
