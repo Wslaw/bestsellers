@@ -350,8 +350,7 @@ img {
 .container-team {
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
-  align-items: flex-start;
+    align-items: flex-start;
   column-gap: 24px;
 }
 .bestsellers-names {
