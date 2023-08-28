@@ -23,16 +23,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Reset styles */
 h1,
 h2,
@@ -262,6 +252,7 @@ img {
 
 .bestsellers-mainlist{
   flex-direction: column !important;
+  gap: 30px;
 }
 
 } 
@@ -279,6 +270,7 @@ img {
 }
 .bestsellers-mainlist{
   flex-direction: row !important;
+  gap: 32px;
 }
 .bestsellers-one{
  
@@ -307,7 +299,9 @@ img {
   /* .mobile-hidden{
   display: flex;
 } */
-
+.bestsellers-mainlist{
+  gap: 20px !important;
+}
 }
 
 
@@ -346,7 +340,7 @@ img {
 .bestsellers-mainlist {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 30px;
   
 }
 
