@@ -225,6 +225,7 @@ img {
 @media screen and (min-width: 320px) {
 .best-container{
     flex-wrap: wrap;
+    width: 100%;
 
   }
   .mobile-hidden{
