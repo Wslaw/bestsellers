@@ -1,0 +1,373 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navyblue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --lightslate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navybluemodal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+
+/* ----------------------------*/
+/* |         RESET   ON      | */
+/* ----------------------------*/
+
+main {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+picture{
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+ul {
+  padding-left: 0;
+  display: flex;
+}
+
+/* Обнулення маржінів у заголовков та параграфів  */
+h1,
+h2,
+h3,
+p {
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+/*-------Зроби з картинок блоковий елемент + гумовий + автоподстройка висоти +
+         указывает содержимому заполнять контейнер object-fit: cover;
+         он будет отрезать стороны изображения, сохранение соотношения сторон */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* --Зроби зображення блочними елементами*/
+/*----------------------------------  */
+/*             RESET END              */
+/* ---------------------------------  */
+
+/* Додаємо "Паттерн для приховання заголовків": властивості для класу .visually-hidden */
+
+@media screen and (max-width: 767px) {
+  .page-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Playfair Display;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+  .section-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+  .title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+  .section-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px;
+    /* 150% */
+    text-transform: uppercase;
+  }
+  .section-title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 140.625% */
+    text-transform: uppercase;
+  }
+  .title {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 140.625% */
+    text-transform: uppercase;
+  }
+  .section-text {
+    color: var(--blue-font, #0a224a);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    /* 150% */
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* --------------------------------------- */
+/*              Components styles          */
+/* --------------------------------------- */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding:0 16px;
+}
+@media screen and (min-width: 320px) {
+.best-container{
+    flex-wrap: wrap;
+
+  }
+  .mobile-hidden{
+  display: none !important;
+}
+
+.bestsellers-mainlist{
+  flex-direction: column !important;
+}
+
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  .best-container{
+    flex-wrap: wrap;
+
+  }
+  .mobile-hidden{
+  display: none !important;
+}
+
+.bestsellers-mainlist{
+  flex-direction: column !important;
+}
+
+} 
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+.best-container{
+  flex-wrap: wrap;
+}
+.bestsellers-list{
+  /* flex-basis: calc((100% - 20px) / 2); */
+}
+.bestsellers-mainlist{
+  flex-direction: row !important;
+}
+.bestsellers-one{
+ 
+/* flex-basis: calc((100% - 20px) / 2); */
+}
+
+.bestsellers-two{
+/* flex-basis: calc((100% - 20px) / 2); */
+}
+
+.mobile-hidden{
+  display: flex !important;
+}
+
+
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
+  .bestsellers-one{
+    
+  } 
+  /* .mobile-hidden{
+  display: flex;
+} */
+
+}
+
+
+
+.section {
+}
+.container {
+  
+ 
+
+}
+.bestsellers-description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.best{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.best-container {display: flex;
+  flex-direction: row;
+  /* justify-content: baseline; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  gap: 24px;
+}
+.bestsellers-list {
+  display: flex;
+  /* width: calc((100% - 20px) / 2); */
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.bestsellers-mainlist {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  
+}
+
+
+
+
+.container-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-start;
+  column-gap: 24px;
+}
+.bestsellers-names {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.bestsellers-price {
+  font-weight: 700;
+}
+.mobile-hidden {
+  margin-top: 30px;
+}
+
